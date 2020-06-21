@@ -1,0 +1,23 @@
+uuid: c5c2f9a9-53ea-41a6-b744-a847a18b3cd7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.flux_rss_drupal_planet
+  module:
+    - text
+id: node.flux_rss_drupal_planet.body
+field_name: body
+entity_type: node
+bundle: flux_rss_drupal_planet
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

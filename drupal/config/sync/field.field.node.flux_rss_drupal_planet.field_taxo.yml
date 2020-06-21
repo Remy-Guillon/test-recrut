@@ -1,0 +1,29 @@
+uuid: 6268e72d-6256-49f5-b474-1a42bf3c7d1a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxo
+    - node.type.flux_rss_drupal_planet
+    - taxonomy.vocabulary.sujet
+id: node.flux_rss_drupal_planet.field_taxo
+field_name: field_taxo
+entity_type: node
+bundle: flux_rss_drupal_planet
+label: Taxo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sujet: sujet
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

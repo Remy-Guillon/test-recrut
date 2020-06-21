@@ -1,0 +1,18 @@
+uuid: 6526d40c-19dc-48fa-87ad-7c562ce570b6
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bartiksub
+id: pagetitle
+theme: bartiksub
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

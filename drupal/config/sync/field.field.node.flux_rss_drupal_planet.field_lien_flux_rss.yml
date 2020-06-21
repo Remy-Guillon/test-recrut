@@ -1,0 +1,23 @@
+uuid: 669c085b-5b9d-4ac9-adfa-504dd5a37ae5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien_flux_rss
+    - node.type.flux_rss_drupal_planet
+  module:
+    - link
+id: node.flux_rss_drupal_planet.field_lien_flux_rss
+field_name: field_lien_flux_rss
+entity_type: node
+bundle: flux_rss_drupal_planet
+label: 'Lien flux RSS'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

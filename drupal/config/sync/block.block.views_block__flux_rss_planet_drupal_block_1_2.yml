@@ -1,0 +1,24 @@
+uuid: c20dc5c8-1f42-4fdd-bd04-e487a26041d6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.flux_rss_planet_drupal
+  module:
+    - views
+  theme:
+    - bartiksub
+id: views_block__flux_rss_planet_drupal_block_1_2
+theme: bartiksub
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'views_block:flux_rss_planet_drupal-block_1'
+settings:
+  id: 'views_block:flux_rss_planet_drupal-block_1'
+  label: 'Dernier articles'
+  provider: views
+  label_display: visible
+  views_label: 'Dernier articles'
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 549aae2d-4b7e-4668-9711-3764edda0d1d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartiksub
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+id: bartiksub_content
+theme: bartiksub
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

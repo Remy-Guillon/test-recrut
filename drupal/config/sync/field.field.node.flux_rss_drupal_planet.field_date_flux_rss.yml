@@ -1,0 +1,21 @@
+uuid: 89e9f07e-2653-4f16-a0d7-81735396bb7f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_flux_rss
+    - node.type.flux_rss_drupal_planet
+  module:
+    - datetime
+id: node.flux_rss_drupal_planet.field_date_flux_rss
+field_name: field_date_flux_rss
+entity_type: node
+bundle: flux_rss_drupal_planet
+label: 'Date flux RSS'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

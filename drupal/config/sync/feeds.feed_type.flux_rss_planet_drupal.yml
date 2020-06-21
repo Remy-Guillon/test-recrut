@@ -1,0 +1,88 @@
+uuid: 6976eca6-3603-4b8f-86ec-95fac745ba13
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.flux_rss_drupal_planet.body
+    - field.field.node.flux_rss_drupal_planet.field_date_flux_rss
+    - field.field.node.flux_rss_drupal_planet.field_lien_flux_rss
+    - field.field.node.flux_rss_drupal_planet.field_taxo
+    - node.type.flux_rss_drupal_planet
+  module:
+    - node
+id: flux_rss_planet_drupal
+label: 'Flux RSS planet Drupal'
+description: ''
+help: ''
+import_period: 0
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: true
+  use_pubsubhubbub: false
+  always_download: true
+  fallback_hub: ''
+  request_timeout: 30
+parser: syndication
+parser_configuration: {  }
+processor: 'entity:node'
+processor_configuration:
+  langcode: fr
+  update_existing: 1
+  update_non_existent: _delete
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: false
+  skip_hash_check: false
+  values:
+    type: flux_rss_drupal_planet
+custom_sources:
+  https_www_drupal_org_planet_rss_xml:
+    label: 'https://www.drupal.org/planet/rss.xml'
+    value: 'https://www.drupal.org/planet/rss.xml'
+    machine_name: https_www_drupal_org_planet_rss_xml
+mappings:
+  -
+    target: field_lien_flux_rss
+    map:
+      uri: https_www_drupal_org_planet_rss_xml
+      title: ''
+    settings:
+      language: ''
+  -
+    target: title
+    map:
+      value: title
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: body
+    map:
+      value: description
+      summary: ''
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_date_flux_rss
+    map:
+      value: timestamp
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: created
+    map:
+      value: timestamp
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_taxo
+    map:
+      target_id: feed_title
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: '1'

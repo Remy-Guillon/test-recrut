@@ -1,0 +1,39 @@
+uuid: 472332cc-abb2-4247-92d1-b2f84a259594
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flux_rss_drupal_planet.body
+    - field.field.node.flux_rss_drupal_planet.feeds_item
+    - field.field.node.flux_rss_drupal_planet.field_date_flux_rss
+    - field.field.node.flux_rss_drupal_planet.field_lien_flux_rss
+    - field.field.node.flux_rss_drupal_planet.field_taxo
+    - node.type.flux_rss_drupal_planet
+  module:
+    - text
+    - user
+id: node.flux_rss_drupal_planet.teaser
+targetEntityType: node
+bundle: flux_rss_drupal_planet
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true
+  field_date_flux_rss: true
+  field_lien_flux_rss: true
+  field_taxo: true
+  langcode: true

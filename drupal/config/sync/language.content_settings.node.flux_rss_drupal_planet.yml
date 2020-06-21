@@ -1,0 +1,11 @@
+uuid: a3b9df0f-8640-4dd5-8a67-87aba239cca8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.flux_rss_drupal_planet
+id: node.flux_rss_drupal_planet
+target_entity_type_id: node
+target_bundle: flux_rss_drupal_planet
+default_langcode: site_default
+language_alterable: false

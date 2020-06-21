@@ -1,0 +1,14 @@
+uuid: 080d8f2b-875b-46a0-be99-a877f82b4e79
+name: 'Site test recrutement'
+mail: remy@kigeri.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

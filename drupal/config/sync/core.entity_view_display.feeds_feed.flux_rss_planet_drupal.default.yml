@@ -1,0 +1,42 @@
+uuid: 548e5632-2308-4d27-b36d-c3a8cef1f1ed
+langcode: fr
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.flux_rss_planet_drupal
+  module:
+    - feeds
+    - user
+id: feeds_feed.flux_rss_planet_drupal.default
+targetEntityType: feeds_feed
+bundle: flux_rss_planet_drupal
+mode: default
+content:
+  imported:
+    label: hidden
+    type: timestamp_ago
+    weight: 1
+    region: content
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+  next:
+    label: hidden
+    type: timestamp
+    weight: 1
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  source:
+    label: hidden
+    type: feeds_uri_link
+    weight: -3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

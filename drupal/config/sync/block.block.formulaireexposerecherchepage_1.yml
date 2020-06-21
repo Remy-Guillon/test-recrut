@@ -1,0 +1,23 @@
+uuid: ea786e7b-faaf-4fb5-965c-d80ad2bf97f9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.recherche
+  module:
+    - views
+  theme:
+    - bartik
+id: formulaireexposerecherchepage_1
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:recherche-page_1'
+settings:
+  id: 'views_exposed_filter_block:recherche-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

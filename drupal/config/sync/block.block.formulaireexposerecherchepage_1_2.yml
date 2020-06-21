@@ -1,0 +1,23 @@
+uuid: a62dc62e-f5a5-4c6a-9097-31a42bad5563
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.recherche
+  module:
+    - views
+  theme:
+    - bartiksub
+id: formulaireexposerecherchepage_1_2
+theme: bartiksub
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'views_exposed_filter_block:recherche-page_1'
+settings:
+  id: 'views_exposed_filter_block:recherche-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Recherche
+visibility: {  }

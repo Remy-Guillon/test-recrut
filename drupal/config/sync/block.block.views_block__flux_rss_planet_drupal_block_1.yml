@@ -1,0 +1,24 @@
+uuid: 83746870-7485-43ba-98d5-cdbc1809713f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.flux_rss_planet_drupal
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__flux_rss_planet_drupal_block_1
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:flux_rss_planet_drupal-block_1'
+settings:
+  id: 'views_block:flux_rss_planet_drupal-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

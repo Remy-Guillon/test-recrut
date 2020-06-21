@@ -1,0 +1,22 @@
+uuid: bbfbbccc-c5a9-432a-a386-4c36f47e7472
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartiksub
+_core:
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+id: bartiksub_messages
+theme: bartiksub
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
